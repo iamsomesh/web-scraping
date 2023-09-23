@@ -1,4 +1,4 @@
-development:
+default: &default
   adapter: postgresql
   encoding: unicode
   database: my_scrape_development
@@ -6,3 +6,6 @@ development:
   password: postgres
   host: localhost
   port: 5432
+
+development:
+  <<: *default
